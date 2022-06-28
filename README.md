@@ -6,17 +6,17 @@ Intercomparison of regional loss estimates from global synthetic tropcial cyclon
 
 Publication status: [under revision](https://doi.org/10.21203/rs.3.rs-1429968/v1).
 
-(1)Institute for Environmental Decisions, ETH Zurich, Switzerland
+(1) Institute for Environmental Decisions, ETH Zurich, Switzerland
 
-(2)Federal Office of Meteorology and Climatology MeteoSwiss, Switzerland
+(2) Federal Office of Meteorology and Climatology MeteoSwiss, Switzerland
 
-(3)Potsdam Institute for Climate Impact Research (PIK), Potsdam, Germany
+(3) Potsdam Institute for Climate Impact Research (PIK), Potsdam, Germany
 
-(4)Institute for Environmental Studies (IVM), Vrije Universiteit Amsterdam, Amsterdam, The Netherlands
+(4) Institute for Environmental Studies (IVM), Vrije Universiteit Amsterdam, Amsterdam, The Netherlands
 
-(5)Lamont-Doherty Earth Observatory, Columbia University, Palisades, New York, USA
+(5) Lamont-Doherty Earth Observatory, Columbia University, Palisades, New York, USA
 
-(6)Lorenz Center, Massachusetts Institute of Technology, Cambridge, Massachusetts, USA
+(6) Lorenz Center, Massachusetts Institute of Technology, Cambridge, Massachusetts, USA
 
 Contact: [Simona Meiler](simona.meiler@usys.ethz.ch)
 
