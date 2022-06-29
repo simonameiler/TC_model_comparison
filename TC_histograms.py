@@ -3,7 +3,7 @@ Created on 2022-01-13
 
 description: hazard analysis - plot landfall intensity histograms (from track or windfield data)
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import pathlib

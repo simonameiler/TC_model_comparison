@@ -3,7 +3,7 @@ Created on 2022-01-13
 
 description: hazard analysis - landfall intensity statistics from windfield data
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import pathlib

@@ -3,7 +3,7 @@ Created on 2022-01-12
 
 description: hazard analysis - draw subsamples at length of IBTrACS (39 years)
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import datetime as dt

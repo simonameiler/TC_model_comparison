@@ -3,7 +3,7 @@ Created on 2022-01-13
 
 description: hazard analysis - extract max wind speeds over land (!) from wind field data sets
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import pathlib
