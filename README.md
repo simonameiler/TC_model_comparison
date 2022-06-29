@@ -1,8 +1,9 @@
 # Intercomparison of regional loss estimates from global synthetic tropcial cyclone models
-These scripts reproduce the main results of the paper: 
+These scripts reproduce the main results of the paper:
 
-Simona Meiler(1,2), Thomas Vogt(3), Nadia Bloemendaal(4), Alessio Ciullo(1,2), Chia-Ying Lee(5), Suzana J. Camargo(5), Kerry Emanuel(6), and David N. Bresch(1,2)
-Intercomparison of regional loss estimates from global synthetic tropcial cyclone models
+*Simona Meiler(1,2), Thomas Vogt(3), Nadia Bloemendaal(4), Alessio Ciullo(1,2), Chia-Ying Lee(5), Suzana J. Camargo(5),
+Kerry Emanuel(6), and David N. Bresch(1,2):
+**Intercomparison of regional loss estimates from global synthetic tropcial cyclone models***
 
 Publication status: [under revision](https://doi.org/10.21203/rs.3.rs-1429968/v1).
 
