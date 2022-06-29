@@ -50,6 +50,9 @@ The output csv files are post-processed in Impact_post-process.py.
 Python script for post-processing of impact results; subsampling, confidence intervals, etc.
 The output npz files are used for plotting and uploaded in the data folder.
 
+#### Impact_tables_res.py
+Python script containing impact analyses. Produces numbers for Supplementary Tables 1-4 and Hurricane Maria analysis. Can be executed with the data in the "data" folder.
+
 #### Fig*.py
 Python scripts named according to their Figure number in the publication can be used to reproduce the figures.
 
