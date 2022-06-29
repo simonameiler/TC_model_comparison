@@ -18,6 +18,7 @@ import xarray as xr
 
 from climada.hazard.tc_tracks import SAFFIR_SIM_CAT
 from climada.hazard.trop_cyclone import KN_TO_MS
+from climada.util.constants import SYSTEM_DIR
 
 DATASETS = ['IBTrACS', 'IBTrACS_old', 'IBTrACS_p', 'STORM', 'MIT', 'CHAZ_ERA5']
 REGIONS = ['AP', 'IO', 'SH', 'WP']
@@ -27,7 +28,6 @@ SUBSAMPLE_DIR = DATA_DIR / "subsamples"
 MAXWIND_DIR = DATA_DIR / "max_winds"
 STATS_DIR = DATA_DIR / "stats"
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 SAFFIR_SIM_CAT_MS = [v * KN_TO_MS for v in SAFFIR_SIM_CAT]

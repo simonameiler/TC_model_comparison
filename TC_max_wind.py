@@ -12,11 +12,11 @@ import sys
 import numpy as np
 
 from climada.hazard import TropCyclone
+from climada.util.constants import SYSTEM_DIR
 
 DATA_DIR = pathlib.Path("./data")
 OUTPUT_DIR = DATA_DIR / "max_winds"
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 DATASETS = ['IBTrACS', 'IBTrACS_old', 'IBTrACS_p', 'STORM', 'MIT', 'CHAZ_ERA5']

@@ -17,13 +17,13 @@ import pandas as pd
 from scipy.io import loadmat
 
 from climada.hazard import TropCyclone
+from climada.util.constants import SYSTEM_DIR
 
 REGIONS = ['AP', 'IO', 'SH', 'WP']
 
 DATA_DIR = pathlib.Path("./data")
 OUTPUT_DIR = DATA_DIR / "subsamples"
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 RNG = np.random.default_rng(123456789)

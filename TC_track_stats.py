@@ -22,6 +22,7 @@ import xarray as xr
 from climada.hazard.tc_tracks import TCTracks, SAFFIR_SIM_CAT, _get_landfall_idx
 from climada.hazard.trop_cyclone import KN_TO_MS
 import climada.util.coordinates as u_coord
+from climada.util.constants import SYSTEM_DIR
 
 LOGGER = logging.getLogger('track_stats')
 LOGGER.setLevel(logging.DEBUG)
@@ -42,7 +43,6 @@ SUBSAMPLE_DIR = DATA_DIR / "subsamples"
 MAXWIND_DIR = DATA_DIR / "max_winds"
 OUTPUT_DIR = DATA_DIR / "stats"
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 TRACKS_DIR = SYSTEM_DIR / "tracks"
 
