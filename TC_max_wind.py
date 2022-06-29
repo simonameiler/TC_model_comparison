@@ -16,6 +16,7 @@ from climada.util.constants import SYSTEM_DIR
 
 DATA_DIR = pathlib.Path("./data")
 OUTPUT_DIR = DATA_DIR / "max_winds"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 

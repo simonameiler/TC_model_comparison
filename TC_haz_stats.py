@@ -27,12 +27,11 @@ DATA_DIR = pathlib.Path("./data")
 SUBSAMPLE_DIR = DATA_DIR / "subsamples"
 MAXWIND_DIR = DATA_DIR / "max_winds"
 STATS_DIR = DATA_DIR / "stats"
+STATS_DIR.mkdir(parents=True, exist_ok=True)
 
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 SAFFIR_SIM_CAT_MS = [v * KN_TO_MS for v in SAFFIR_SIM_CAT]
-# legacy, used by Simona's scripts:
-# SAFFIR_SIM_CAT_MS = [18, 33, 43, 50, 59, 70, 120]
 
 
 def read_subsamples(path):

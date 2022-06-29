@@ -23,6 +23,7 @@ REGIONS = ['AP', 'IO', 'SH', 'WP']
 
 DATA_DIR = pathlib.Path("./data")
 OUTPUT_DIR = DATA_DIR / "subsamples"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 

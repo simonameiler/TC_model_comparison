@@ -40,8 +40,12 @@ REGIONS = ['AP', 'IO', 'SH', 'WP']
 
 DATA_DIR = pathlib.Path("./data")
 SUBSAMPLE_DIR = DATA_DIR / "subsamples"
+
 MAXWIND_DIR = DATA_DIR / "max_winds"
+MAXWIND_DIR.mkdir(parents=True, exist_ok=True)
+
 OUTPUT_DIR = DATA_DIR / "stats"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 TRACKS_DIR = SYSTEM_DIR / "tracks"
