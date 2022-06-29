@@ -28,37 +28,51 @@ Contact: [Simona Meiler](simona.meiler@usys.ethz.ch)
 Python script to generate the centroids and exposure files.
 
 #### Hazard_*.py
-Python scripts to load TC track sets and calculate the 2D windfield. The * stands for the TC track set used for each respective calculation.
-The output hdf5 files are the hazard sets, which are further used for the impact calculation. Note that this step requires a computer cluster and that the output files are large (up to over 10GB per file).
+Python scripts to load TC track sets and calculate the 2D windfield. The * stands for the TC track set used for each
+respective calculation. The output hdf5 files are the hazard sets, which are further used for the impact calculation.
+Note that this step requires a computer cluster and that the output files are large (up to over 10GB per file).
 
 #### TC_subsample.py
-Python scripts for hazard analysis - draw subsamples at length of IBTrACS (39 years)
+Python script for hazard analysis: draw subsamples at length of IBTrACS (39 years).
+Make sure to run this before running the remaining `TC_*.py` scripts.
+
+#### TC_max_wind.py
+Python script for hazard analysis: extract max wind speeds over land (!) from wind field data sets.
+Make sure to run this before running the remaining `TC_*.py` scripts below.
 
 #### TC_track_stats.py
-Python scripts for hazard analysis - landfall intensity statistics from track data
+Python script for hazard analysis: landfall intensity statistics from track data.
+Make sure to run this after `TC_max_wind.py` and `TC_subsample.py`, and before running
+the `TC_histograms.py` script below.
 
 #### TC_haz_stats.py
-Python scripts for hazard analysis - landfall intensity statistics from windfield data
+Python script for hazard analysis: landfall intensity statistics from windfield data.
+Make sure to run this after `TC_max_wind.py` and `TC_subsample.py`, and before running
+the `TC_histograms.py` script below.
 
 #### TC_histograms.py
-Python scripts for hazard analysis - plot landfall intensity histograms (from track (Supplementary Figure 1) or windfield data (Figure 1))
+Python script for hazard analysis: plot landfall intensity histograms, from track (Supplementary Figure 1) or
+windfield data (Figure 1).
+Make sure to run the `TC_track_stats.py` and `TC_haz_stats.py` scripts (above) before running this script.
 
 #### Impact_calc.py
-Python script to compute the estimated loss from different synthetic tropical cyclone hazard sets - run on the ETH Euler cluster.
-The output csv files are post-processed in Impact_post-process.py. 
+Python script to compute the estimated loss from different synthetic tropical cyclone hazard sets - run on
+the ETH Euler cluster. The output csv files are post-processed in Impact_post-process.py.
 
 #### Impact_post-process.py
 Python script for post-processing of impact results; subsampling, confidence intervals, etc.
 The output npz files are used for plotting and uploaded in the data folder.
 
 #### Impact_tables_res.py
-Python script containing impact analyses. Produces numbers for Supplementary Tables 1-4 and Hurricane Maria analysis. Can be executed with the data in the "data" folder.
+Python script containing impact analyses. Produces numbers for Supplementary Tables 1-4 and Hurricane Maria analysis.
+Can be executed with the data in the "data" folder.
 
 #### Fig*.py
 Python scripts named according to their Figure number in the publication can be used to reproduce the figures.
 
 #### Supp_*.py
-Python scripts starting with Supp_ are used to produce outputs and results for the Supplementary Material and contain code analogous to their main text counterparts.
+Python scripts starting with Supp_ are used to produce outputs and results for the Supplementary Material and contain
+code analogous to their main text counterparts.
 
 ## Requirements
 Requires:
