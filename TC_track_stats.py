@@ -3,7 +3,7 @@ Created on 2022-01-13
 
 description: hazard analysis - landfall intensity statistics from track data
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import itertools
@@ -22,6 +22,7 @@ import xarray as xr
 from climada.hazard.tc_tracks import TCTracks, SAFFIR_SIM_CAT, _get_landfall_idx
 from climada.hazard.trop_cyclone import KN_TO_MS
 import climada.util.coordinates as u_coord
+from climada.util.constants import SYSTEM_DIR
 
 LOGGER = logging.getLogger('track_stats')
 LOGGER.setLevel(logging.DEBUG)
@@ -39,10 +40,13 @@ REGIONS = ['AP', 'IO', 'SH', 'WP']
 
 DATA_DIR = pathlib.Path("./data")
 SUBSAMPLE_DIR = DATA_DIR / "subsamples"
-MAXWIND_DIR = DATA_DIR / "max_winds"
-OUTPUT_DIR = DATA_DIR / "stats"
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
+MAXWIND_DIR = DATA_DIR / "max_winds"
+MAXWIND_DIR.mkdir(parents=True, exist_ok=True)
+
+OUTPUT_DIR = DATA_DIR / "stats"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 TRACKS_DIR = SYSTEM_DIR / "tracks"
 

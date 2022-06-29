@@ -3,7 +3,7 @@ Created on 2022-01-12
 
 description: hazard analysis - draw subsamples at length of IBTrACS (39 years)
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import datetime as dt
@@ -17,13 +17,14 @@ import pandas as pd
 from scipy.io import loadmat
 
 from climada.hazard import TropCyclone
+from climada.util.constants import SYSTEM_DIR
 
 REGIONS = ['AP', 'IO', 'SH', 'WP']
 
 DATA_DIR = pathlib.Path("./data")
 OUTPUT_DIR = DATA_DIR / "subsamples"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 RNG = np.random.default_rng(123456789)

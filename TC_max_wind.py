@@ -3,7 +3,7 @@ Created on 2022-01-13
 
 description: hazard analysis - extract max wind speeds over land (!) from wind field data sets
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import pathlib
@@ -12,11 +12,12 @@ import sys
 import numpy as np
 
 from climada.hazard import TropCyclone
+from climada.util.constants import SYSTEM_DIR
 
 DATA_DIR = pathlib.Path("./data")
 OUTPUT_DIR = DATA_DIR / "max_winds"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 DATASETS = ['IBTrACS', 'IBTrACS_old', 'IBTrACS_p', 'STORM', 'MIT', 'CHAZ_ERA5']

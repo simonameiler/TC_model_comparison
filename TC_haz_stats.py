@@ -3,7 +3,7 @@ Created on 2022-01-13
 
 description: hazard analysis - landfall intensity statistics from windfield data
 
-@author: Thomas Vogt (tvogts)
+@author: Thomas Vogt (thomas.vogt@pik-potsdam.de)
 """
 
 import pathlib
@@ -18,6 +18,7 @@ import xarray as xr
 
 from climada.hazard.tc_tracks import SAFFIR_SIM_CAT
 from climada.hazard.trop_cyclone import KN_TO_MS
+from climada.util.constants import SYSTEM_DIR
 
 DATASETS = ['IBTrACS', 'IBTrACS_old', 'IBTrACS_p', 'STORM', 'MIT', 'CHAZ_ERA5']
 REGIONS = ['AP', 'IO', 'SH', 'WP']
@@ -26,13 +27,11 @@ DATA_DIR = pathlib.Path("./data")
 SUBSAMPLE_DIR = DATA_DIR / "subsamples"
 MAXWIND_DIR = DATA_DIR / "max_winds"
 STATS_DIR = DATA_DIR / "stats"
+STATS_DIR.mkdir(parents=True, exist_ok=True)
 
-SYSTEM_DIR = pathlib.Path("/cluster/work/climate/meilers/climada/data")
 HAZARD_DIR = SYSTEM_DIR / "hazard"
 
 SAFFIR_SIM_CAT_MS = [v * KN_TO_MS for v in SAFFIR_SIM_CAT]
-# legacy, used by Simona's scripts:
-# SAFFIR_SIM_CAT_MS = [18, 33, 43, 50, 59, 70, 120]
 
 
 def read_subsamples(path):
